@@ -1,3 +1,77 @@
 body {
+  margin: 0;
+  margin-top: 0;
   text-align: center;
+  background-color: #e1e5ea;
+}
+h4 {
+  margin: 0;
+  font-family: "Uchen", serif;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.arrange_list {
+  text-align: left;
+}
+.welcome-mess {
+  background-color: #9dbeb9;
+  padding: 20px 50px 10px;
+  margin: 2% 37% 0;
+  border-style: inset;
+  border-width: 5px;
+  border-color: #fff;
+  border-radius: 20% 15%;
+}
+.current-day {
+  font-family: "Otomanopee One", sans-serif;
+  font-weight: 2rem;
+  font-size: 1rem;
+}
+.current-item {
+  background-color: #a7bbc7;
+  height: 40px;
+  width: 300px;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 10px;
+  font-family: "Qahiri", sans-serif;
+  font-size: 2rem;
+  margin: 10px;
+}
+.current-item:last-child {
+  border-style: outset;
+}
+.current-item:hover {
+  opacity: 0.5;
+}
+
+ol {
+  padding: 0;
+  margin: auto 40%;
+}
+form {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+input[type="text"] {
+  height: 2.2em;
+  padding: 2px;
+  border: 1px solid #ddd;
+  font: 1em/1.2 "Helvetica neue", Arial, sans-serif;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.button-style {
+  border-radius: 100%;
+  border-color: #fff;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 10px;
+  text-decoration: italic;
+}
+::placeholder {
+  font-style: italic;
 }

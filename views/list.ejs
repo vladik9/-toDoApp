@@ -6,20 +6,43 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="/Css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
      <title>ToDoApp</title>
 </head>
 
 <body>
-     <h4>Welcome to my ToDoListApp</h4>
+     <h4 class="welcome-mess">Welcome to my ToDoListApp</h4>
 
 
-     <h5>Today is: <%=CurrentDay %>
+     <h5 class="current-day">Today is: <br>
+          <%=CurrentDay %>
      </h5>
+     <ol class="arrange_list">
 
-     <form action="/" method="post">
+          <% for(let i=0; i<newItems.length; i++) {%>
 
-          <input type="text" name="userListItem">
-          <button type="submit">Add</button>
+               <div>
+                    <p class="current-item">
+                         <%= newItems[i] %>
+                    </p>
+                    <% } %>
+               </div>
+
+
+     </ol>
+
+     <form class='form-style' action="/" method="post">
+
+          <input placeholder="your text" type="text" name="userListItem" autocomplete="off">
+          <button class=button-style type="submit" name="button">+</button>
 
      </form>
 </body>
