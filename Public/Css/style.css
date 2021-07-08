@@ -1,9 +1,11 @@
-body {
+html {
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  min-height: 1000px;
   margin: 0;
   margin-top: 0;
   text-align: center;
-  background-color: #e1e5ea;
 }
+
 h4 {
   margin: 0;
   font-family: "Uchen", serif;
@@ -15,13 +17,13 @@ h4 {
   text-align: left;
 }
 .welcome-mess {
-  background-color: #89f3e3;
+  background-color: #a683e3;
   padding: 20px 50px 10px;
   margin: 2% 37% 0;
   border-style: inset;
-  border-width: 5px;
+  border-width: 3px;
   border-color: #fff;
-  border-radius: 20% 15%;
+  border-radius: 50% 10%;
 }
 .current-day {
   font-family: "Otomanopee One", sans-serif;
