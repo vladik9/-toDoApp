@@ -15,7 +15,7 @@ h4 {
   text-align: left;
 }
 .welcome-mess {
-  background-color: #9dbeb9;
+  background-color: #89f3e3;
   padding: 20px 50px 10px;
   margin: 2% 37% 0;
   border-style: inset;
@@ -55,10 +55,9 @@ form {
   padding-left: 50px;
 }
 input[type="text"] {
-  height: 2.2em;
+  height: 2em;
   padding: 2px;
   border: 1px solid #ddd;
-  font: 1em/1.2 "Helvetica neue", Arial, sans-serif;
   text-align: center;
   border-radius: 100px;
 }
@@ -68,9 +67,14 @@ input[type="text"] {
   border-color: #fff;
   height: 50px;
   width: 50px;
+  background-color: rgb(233, 216, 216);
   position: relative;
-  left: 10px;
+
   text-decoration: italic;
+}
+.input-style {
+  font-family: "Qahiri", sans-serif;
+  font-size: 1.5em;
 }
 ::placeholder {
   font-style: italic;

@@ -1,3 +1,4 @@
+<!-- this is a simple html file -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="/Css/style.css">
+     <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
@@ -15,6 +17,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+
      <title>ToDoApp</title>
 </head>
 
@@ -23,6 +26,7 @@
 
 
      <h5 class="current-day">Today is: <br>
+          <!--  this is a template for a variable called CurrentDay that will be replaced -->
           <%=CurrentDay %>
      </h5>
      <ol class="arrange_list">
@@ -31,17 +35,19 @@
 
                <div>
                     <p class="current-item">
+                         <!-- newsItem is a varilable trated like an arr that cand be printed -->
                          <%= newItems[i] %>
                     </p>
+                    <!--  the character below is used to isolate the js elements -->
                     <% } %>
                </div>
 
 
      </ol>
-
+     <!-- form use the post method for action in root / -->
      <form class='form-style' action="/" method="post">
 
-          <input placeholder="your text" type="text" name="userListItem" autocomplete="off">
+          <input class="input-style" placeholder="your text" type="text" name="userListItem" autocomplete="off">
           <button class=button-style type="submit" name="button">+</button>
 
      </form>
